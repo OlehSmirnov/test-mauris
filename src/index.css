@@ -1,5 +1,10 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +12,105 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.tv-image {
+  width: 70%;
+  height: 70%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.shows {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-day {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-day-date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(154, 154, 154, 0.3);
+}
+
+.single-day-date-heading {
+  font-size: 4vw;
+  margin: 15px;
+}
+
+.show-card {
+  display: flex;
+  border: none;
+  flex-direction: row;
+  margin: 25px 20px 0;
+}
+
+.show-card img {
+  width: 30%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.show-card .fa-bell {
+  visibility: hidden;
+  color: gray;
+  background-color: transparent;
+  text-shadow: #968785;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  font-size: 4.5vw;
+}
+
+.show-card-heading {
+  color: initial;
+  font-size: 3.5vw;
+}
+
+.show-card-body {
+  color: #9a9a9a;
+  font-size: 3.5vw;
+  padding: 5px 15px;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.show-card-season {
+  color: #696969;
+  margin-top: auto;
+  padding: 8px 15px;
+  width: 80%;
+  border-radius: 5px;
+  font-size: 2.5vw;
+  background-color: rgba(218, 217, 217, 0.5);
+}
+
+.btn {
+  font-size: 3vw;
+  margin: 25px 20px ;
+  background-color: transparent;
+  color: #9a9a9a;
+}
+
+.btn-load-more {
+  margin-top: 0;
+}
+
+i {
+  font-size: 3.5vw;
+  margin-left: 10px;
 }
