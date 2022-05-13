@@ -101,13 +101,13 @@ body {
 
 .btn {
   font-size: 3vw;
-  margin: 25px 20px ;
+  margin: 25px 20px 0;
   background-color: transparent;
   color: #9a9a9a;
 }
 
 .btn-load-more {
-  margin-top: 0;
+  margin: 20px;
 }
 
 i {
